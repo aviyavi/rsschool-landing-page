@@ -1,0 +1,53 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif; /* Замените на шрифт из вашей Figma */
+    background-color: #fcf8f2; /* Светлый кофейный фон */
+    color: #332211; /* Тёмно-коричневый цвет текста */
+  }
+  
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 40px;
+  }
+
+  .nav {
+
+    font-family: 'Inter', sans-serif; /* Основной шрифт макета */
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #403F3D; /* Тёмно-серый цвет текста */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav__list{
+    display: flex;
+    list-style: none; /* Убирает маркеры-точки у списка */
+    gap: 40px; /* Равномерный отступ между пунктами меню */
+    margin: -40px 135px -38px 149px;
+        position: absolute;
+}
+
+.header__menu-link{
+    position: absolute;
+    margin: -31px 30px 40px 1000px;
+        display: flex;
+        align-items: center;
+        gap: 8px;                  
+        text-decoration: none;        
+        color: #403F3D;              
+        font-weight: 600;              
+}
+.theme {
+    position: absolute;
+    margin: -37px -128px 20px 878px;
+}
