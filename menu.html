@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+   <!-- Шапка сайта (Header) - общая для обеих страниц -->
+   <header class="site-header">
+    <div class="header-container">
+      <!-- Логотип -->
+      <a href="index.html" class="logo">
+   <img src="img/logo.png" alt="">
+      </a>
+  
+      <!-- Навигация -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Favorite coffee</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Mobile app</a></li>
+          <li><a href="#" class="nav-link">Contact us</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Правый блок: Переключатель темы и Меню -->
+      <div class="header-actions">
+        <!-- Переключатель темы (солнце/луна) -->
+<!-- Переключатель темы (солнце/луна) -->
+<button class="theme-button" id="theme-toggle" aria-label="Toggle theme">
+  <span class="toggle-icon active"><img src="img/Light.png" alt="Светлая тема"></span>
+  <span class="toggle-icon"><img src="img/Dark.png" alt="Темная тема"></span>
+</button>
+
+        <!-- Ссылка/Кнопка Меню -->
+        <a href="#" class="menu-btn">
+          Menu 
+          <img src="img/coffee-cup.png" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="menu-section">
+    <!-- Заголовок секции -->
+    <h2 class="menu-title">
+      Behind each of our cups<br>
+      hides an <span class="highlight-italic">amazing surprise</span>
+    </h2>
+  
+ <!-- Переключатель категорий (Табы) -->
+<div class="menu-tabs">
+  <!-- Ссылка на КОФЕ (menu.html). Класс active убираем, так как мы сейчас на странице чая -->
+  <a href="menu.html" class="tab-btn" data-category="coffee">☕ Coffee</a>
+
+  <!-- Ссылка на ЧАЙ (tea.html). Она АКТИВНАЯ, поэтому оставляем class="tab-btn active" -->
+  <a href="tea.html" class="tab-btn active" data-category="tea">Tea</a>
+
+  <!-- Ссылка на ДЕСЕРТЫ (dessert.html). Тоже обычный класс tab-btn -->
+  <a href="desert.html" class="tab-btn" data-category="dessert">🍰 Dessert</a>
+</div>
+
+<div class="menu-grid">
+  <!-- Карточка 1 -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/coffee-1.png" alt="Irish coffee" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Irish coffee</h3>
+      <p class="product-description">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+      <span class="product-price">$7.00</span>
+    </div>
+  </div>
+
+  <!-- Карточка 2 -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/coffee-2.png" alt="Kahlua coffee" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Kahlua coffee</h3>
+      <p class="product-description">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+      <span class="product-price">$7.00</span>
+    </div>
+  </div>
+
+  <!-- Карточка 3 -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/coffee-3.png" alt="Honey raf" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Honey raf</h3>
+      <p class="product-description">Espresso with frothed milk, cream and aromatic honey</p>
+      <span class="product-price">$5.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 4 -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/coffee-4.png" alt="Ice cappuccino" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Ice cappuccino</h3>
+      <p class="product-description">Cappuccino with soft thick foam in summer version with ice</p>
+      <span class="product-price">$5.00</span>
+    </div>
+  </div>
+
+  <!-- Карточка 5 -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/coffee-5.png" alt="Espresso" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Espresso</h3>
+      <p class="product-description">Classic black coffee</p>
+      <span class="product-price">$4.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 6 -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/coffee-6.png" alt="Latte" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Latte</h3>
+      <p class="product-description">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+      <span class="product-price">$5.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 7 -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/coffee-7.png" alt="Latte macchiato" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Latte macchiato</h3>
+      <p class="product-description">Espresso with frothed milk and chocolate</p>
+      <span class="product-price">$5.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 8 -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/coffee-8.png" alt="Coffee with cognac" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Coffee with cognac</h3>
+      <p class="product-description">Fragrant black coffee with cognac and whipped cream</p>
+      <span class="product-price">$6.50</span>
+    </div>
+  </div>
+</div>
+
+
+<section id="contactus">
+  <footer class="footer-section">
+    <div class="footer-card">
+      
+      <!-- Левая колонка: Слоган и соцсети -->
+      <div class="footer-left">
+        <h2 class="footer-slogan">
+          Sip, Savor, Smile.<br>
+          <span class="highlight-italic">It's coffee time!</span>
+        </h2>
+  
+    </div>
+  </footer>
+</section>
+  
+</body>
+</html>

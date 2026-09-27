@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+     <!-- Шапка сайта (Header) - общая для обеих страниц -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Логотип -->
+      <a href="index.html" class="logo">
+   <img src="img/logo.png" alt="">
+      </a>
+  
+      <!-- Навигация -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Favorite coffee</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Mobile app</a></li>
+          <li><a href="#" class="nav-link">Contact us</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Правый блок: Переключатель темы и Меню -->
+      <div class="header-actions">
+        <!-- Переключатель темы (солнце/луна) -->
+<!-- Переключатель темы (солнце/луна) -->
+<button class="theme-button" id="theme-toggle" aria-label="Toggle theme">
+  <span class="toggle-icon active"><img src="img/Light.png" alt="Светлая тема"></span>
+  <span class="toggle-icon"><img src="img/Dark.png" alt="Темная тема"></span>
+</button>
+
+
+        <!-- Ссылка/Кнопка Меню -->
+        <a href="menu.html" class="menu-btn">
+          Menu 
+          <img src="img/coffee-cup.png" alt="">
+        </a>
+
+        <!-- Кнопка бургер-меню -->
+<button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+<!-- Полноэкранное мобильное меню -->
+<nav class="mobile-menu" id="mobileMenu">
+  <!-- Верхняя панель меню (логотип и кнопка закрытия) -->
+  <div class="menu-header">
+    <div class="logo">Resource <span>COFFEE HOUSE</span></div>
+    <button class="close-toggle" id="closeToggle">&times;</button>
+  </div>
+
+  <!-- Ссылки на разделы -->
+  <ul class="menu-links">
+    <li><a href="#favorite">Favorite coffee</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#app">Mobile app</a></li>
+    <li><a href="#contacts">Contact us</a></li>
+    <li><a href="#menu" class="menu-btn">Menu <span class="cup-icon">☕</span></a></li>
+  </ul>
+</nav>
+
+  </header>
+  
+
+<section class="menu-section">
+    <h2 class="menu-title">Behind each of our cups hides an <span class="highlight-italic">amazing surprise</span></h2>
+  
+  
+ <!-- Переключатель категорий (Табы) -->
+ <div class="menu-tabs">
+    <!-- Ссылка на КОФЕ (menu.html). Класс active убираем, так как мы сейчас на странице чая -->
+    <a href="menu.html" class="tab-btn" data-category="coffee">☕ Coffee</a>
+  
+    <!-- Ссылка на ЧАЙ (tea.html). Она АКТИВНАЯ, поэтому оставляем class="tab-btn active" -->
+    <a href="tea.html" class="tab-btn active" data-category="tea">Tea</a>
+  
+    <!-- Ссылка на ДЕСЕРТЫ (dessert.html). Тоже обычный класс tab-btn -->
+    <a href="desert.html" class="tab-btn" data-category="dessert">🍰 Dessert</a>
+  </div>
+  
+    <!-- СЕТКА ДЛЯ ЧАЯ (Показывается при клике на Tea) -->
+    <div class="menu-grid">
+      
+      <!-- Карточка 1: Moroccan -->
+      <div class="product-card">
+        <div class="product-img-wrapper">
+          <img src="img/tea-1.png" alt="Moroccan tea" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Moroccan</h3>
+          <p class="product-description">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+          <span class="product-price">$4.50</span>
+        </div>
+      </div>
+  
+      <!-- Карточка 2: Ginger -->
+      <div class="product-card">
+        <div class="product-img-wrapper">
+          <img src="img/tea-2.png" alt="Ginger tea" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Ginger</h3>
+          <p class="product-description">Original black tea with fresh ginger, lemon and honey</p>
+          <span class="product-price">$5.00</span>
+        </div>
+      </div>
+  
+      <!-- Карточка 3: Cranberry -->
+      <div class="product-card">
+        <div class="product-img-wrapper">
+          <img src="img/tea-3.png" alt="Cranberry tea" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Cranberry</h3>
+          <p class="product-description">Invigorating black tea with cranberry and honey</p>
+          <span class="product-price">$5.00</span>
+        </div>
+      </div>
+  
+      <!-- Карточка 4: Sea buckthorn -->
+      <div class="product-card">
+        <div class="product-img-wrapper">
+          <img src="img/tea-4.png" alt="Sea buckthorn tea" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Sea buckthorn</h3>
+          <p class="product-description">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</p>
+          <span class="product-price">$5.50</span>
+        </div>
+      </div>
+  
+    </div>
+  
+  </section>
+  
+  <section id="contactus">
+    <footer class="footer-section">
+      <div class="footer-card">
+        
+        <!-- Левая колонка: Слоган и соцсети -->
+        <div class="footer-left">
+          <h2 class="footer-slogan">
+            Sip, Savor, Smile.<br>
+            <span class="highlight-italic">It's coffee time!</span>
+          </h2>
+    
+      </div>
+    </footer>
+  </section>
+  
+</body>
+</html>
+
