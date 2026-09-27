@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+     <!-- Шапка сайта (Header) - общая для обеих страниц -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Логотип -->
+      <a href="index.html" class="logo">
+   <img src="img/logo.png" alt="">
+      </a>
+  
+      <!-- Навигация -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Favorite coffee</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Mobile app</a></li>
+          <li><a href="#" class="nav-link">Contact us</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Правый блок: Переключатель темы и Меню -->
+      <div class="header-actions">
+        <!-- Переключатель темы (солнце/луна) -->
+<!-- Переключатель темы (солнце/луна) -->
+<button class="theme-button" id="theme-toggle" aria-label="Toggle theme">
+  <span class="toggle-icon active"><img src="img/Light.png" alt="Светлая тема"></span>
+  <span class="toggle-icon"><img src="img/Dark.png" alt="Темная тема"></span>
+</button>
+
+
+        <!-- Ссылка/Кнопка Меню -->
+        <a href="menu.html" class="menu-btn">
+          Menu 
+          <img src="img/coffee-cup.png" alt="">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="menu-section">
+    <h2 class="menu-title">Behind each of our cups hides an <span class="highlight-italic">amazing surprise</span></h2>
+  
+  
+ <!-- Переключатель категорий (Табы) -->
+ <div class="menu-tabs">
+    <!-- Ссылка на КОФЕ (menu.html). Класс active убираем, так как мы сейчас на странице чая -->
+    <a href="menu.html" class="tab-btn" data-category="coffee">☕ Coffee</a>
+  
+    <!-- Ссылка на ЧАЙ (tea.html). Она АКТИВНАЯ, поэтому оставляем class="tab-btn active" -->
+    <a href="tea.html" class="tab-btn active" data-category="tea">Tea</a>
+  
+    <!-- Ссылка на ДЕСЕРТЫ (dessert.html). Тоже обычный класс tab-btn -->
+    <a href="desert.html" class="tab-btn" data-category="dessert">🍰 Dessert</a>
+  </div>
+  <div class="menu-grid">
+  <!-- Карточка 1: Marble cheesecake -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/dessert-1.png" alt="Marble cheesecake" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Marble cheesecake</h3>
+      <p class="product-description">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</p>
+      <span class="product-price">$3.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 2: Red velvet -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/dessert-2.png" alt="Red velvet" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Red velvet</h3>
+      <p class="product-description">Layer cake with cream cheese frosting</p>
+      <span class="product-price">$4.00</span>
+    </div>
+  </div>
+
+  <!-- Карточка 3: Cheesecakes -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/dessert-3.png" alt="Cheesecakes" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Cheesecakes</h3>
+      <p class="product-description">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</p>
+      <span class="product-price">$4.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 4: Creme brulee -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/dessert-4.png" alt="Creme brulee" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Creme brulee</h3>
+      <p class="product-description">Delicate creamy dessert in a caramel basket with wild berries</p>
+      <span class="product-price">$4.00</span>
+    </div>
+  </div>
+
+  <!-- Карточка 5: Pancakes -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/dessert-5.png" alt="Pancakes" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Pancakes</h3>
+      <p class="product-description">Tender pancakes with strawberry jam and fresh strawberries</p>
+      <span class="product-price">$4.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 6: Honey cake -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/dessert-6.png" alt="Honey cake" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Honey cake</h3>
+      <p class="product-description">Classic honey cake with delicate custard</p>
+      <span class="product-price">$4.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 7: Chocolate cake -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/dessert-7.png" alt="Chocolate cake" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Chocolate cake</h3>
+      <p class="product-description">Cake with hot chocolate filling and nuts with dried apricots</p>
+      <span class="product-price">$5.50</span>
+    </div>
+  </div>
+
+  <!-- Карточка 8: Black forest -->
+  <div class="product-card">
+    <div class="product-img-wrapper">
+      <img src="img/dessert-8.png" alt="Black forest" class="product-img">
+    </div>
+    <div class="product-info">
+      <h3 class="product-name">Black forest</h3>
+      <p class="product-description">A combination of thin sponge cake with cherry jam and light chocolate mousse</p>
+      <span class="product-price">$6.50</span>
+    </div>
+  </div>
+</div>
+<section id="contactus">
+  <footer class="footer-section">
+    <div class="footer-card">
+      
+      <!-- Левая колонка: Слоган и соцсети -->
+      <div class="footer-left">
+        <h2 class="footer-slogan">
+          Sip, Savor, Smile.<br>
+          <span class="highlight-italic">It's coffee time!</span>
+        </h2>
+  
+    </div>
+  </footer>
+</section>
+  
+</body>
+</html>
